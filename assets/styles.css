@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
