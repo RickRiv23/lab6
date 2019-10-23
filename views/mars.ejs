@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <h1>
-            <a href="index.html">Hi!</a>
-        </h1>
-        <div>
-            <a href="mercury.html">Mercury</a>
-            <a href="venus.html">Venus</a>
-            <a href="mars.html">Mars</a>
-            
-        </div>
-    </body>
-</html>
+
+<% include partials/header.ejs %>
+<div class="image-wrapper">
+    <figure>
+        <img width="100%" src="/imgs/mars.jpg" alt="Mars"/>
+        <figcaption>
+           <p class="caption">
+              Mars is the fourth planet from the Sun and is the second smallest planet in the solar system.
+              Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its
+              reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of
+              carbon dioxide.
+           </p>
+           <a href="https://space-facts.com/mars/">Source</a>
+        </figcaption>
+    </figure>
+</div>
+
+<% include partials/footer.ejs %>

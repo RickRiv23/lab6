@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <h1>
-            <a href="index.html">Hi!</a>
-        </h1>
-        <div>
-            <a href="mercury.html">Mercury</a>
-            <a href="venus.html">Venus</a>
-            <a href="mars.html">Mars</a>
-            
-        </div>
-    </body>
-</html>
+
+<% include partials/header.ejs %>
+
+<div class="image-wrapper">
+    <figure>
+        <img width="100%" src="/imgs/venus.jpg" alt="Venus"/>
+        <figcaption>
+           <p class="caption">
+              Venus is the second planet from the Sun and is the second largest terrestrial planet.
+              Venus is sometimes referred to as the Earth’s sister planet due to their similar size
+              and mass. Venus is named after the Roman goddess of love and beauty.
+           </p>
+           <a href="https://space-facts.com/venus/">Source</a>
+        </figcaption>
+    </figure>
+</div>
+
+<% include partials/footer.ejs %>

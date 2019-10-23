@@ -8,8 +8,8 @@ app.get("/", function(req, res){
     res.render("index.ejs");
     console.log("index route");
 });
-app.get("/index.html", function(req, res){
-    res.render("index.html");
+app.get("/index", function(req, res){
+    res.render("index.ejs");
     console.log("index route");
 });
 
@@ -23,17 +23,22 @@ app.get("/venus", function(req, res){
     console.log("venus route");
 });
 
+app.get("/earth", function(req, res){
+    res.render("earth.ejs");
+    console.log("earth route");
+});
+
 app.get("/mars", function(req, res){
     res.render("mars.ejs");
     console.log("mars route");
 });
 
 //  server listener
-app.listen("8080", "127.0.0.1", function(){
-    console.log("Express Server is Running...");
-});
+// app.listen("8080", "127.0.0.1", function(){
+//     console.log("Express Server is Running...");
+// });
 
 // Herkou Listener
 app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("Running Express Server...");
+  console.log("Running Express Server...");
 });
